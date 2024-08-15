@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <title>またーりジェネレーター</title>
+</head>
+
+<body>
+    <h1>またーりジェネレーター</h1>
+    <div>
+        <form id="MaterialForm">
+            <label for="input">元の文章</label>
+            <br>
+            <textarea rows="10" cols="75" id="input" placeholder="まったり"></textarea>
+            <br>
+            <button type="reset">消す</button>
+            <!--<input type="text" id="material" name="material" required minlength="1" size="100" placeholder="(例)まったり" /> -->
+            <button type="submit">変換</button>
+            <br>
+            <br>
+            <label for="output">結果</label>
+            <br>
+            <textarea rows="10" cols="75" id="output" readonly></textarea>
+            <br>
+            <button type="button" onclick="copy()">コピー</button>
+            <button type="button" onclick="tweet()">ツイート</button>
+        </form>
+        <script src="index.js" async></script>
+    </div>
+</body>
+
+</html>
